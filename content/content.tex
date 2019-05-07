@@ -43,23 +43,43 @@ The Adventures of V man must help the player in reducing his stress there for a 
 \label{Overall Description}
 
 \section{Product Perspective}
-The game itself is not derived from an other game it is being implemented with the development tool Unity which give us the ability to compile it on platforms such as Windows , Linux and MacOS. In addition it also gives us the ability to port it as an android application.
-The game must have these features:
+\paragraph{}The game itself is not derived from an other game it is being implemented with the development tool Unity which give us the ability to compile it on platforms such as Windows , Linux and MacOS. In addition it also gives us the ability to port it as an android application.
+
+\paragraph{}The game is focused on game play and does not focus on any particular story line since this is a stress reducing game having a story line would make no difference since the user would want to play a game straight away without the hassle of going through lines and lines text explaining the story.
+
+\paragraph{} The game must have these features:
 \begin{itemize}
     \item Colourful and cheer full so that the user can have a sense of happiness 
     \item Easy to play to game such that no instructions are needed 
     \item Responsive and easy to control  
 \end{itemize}
-\section{Product Functions}
-
-
+\section{Game Functions}
+The following is a summary of major functions implemented in the game.
+\subsection{Functions}
+\begin{itemize}
+    \item Jumping
+    A necessary mechanic of the game which allow sudden movements when trying to avoid enemies , cross obstacles or attack enemies which are higher up.
+    \item Attack
+    The fundamental mechanic to beating the game as it requires the player to kill enemies to reach the end boss. The attack mechanic fires "balls of fire" which deal damage to enemies.
+    \item Crouch
+    The player can crouch so he can get through tight places it also slows the player down which can help in moving more precisely.
+\end{itemize}
 \section{User Classes and Characteristics}
-
-
+The game controls are designed to be simple and intuitive.Players at any age level should be able to pick up the game and play without any instructions.The game implements one difficulty level so it can be equal to every one. 
+What will distinguish players from each other is : 
+\begin{itemize}
+    \item \textbf{Speed} The ability to beat the game as fast as possible
+    \item \textbf{Foresight} The ability to plan out the paths of multiple enemies attacking the player and creating a strategy to to beat them in the most optimal and efficient way.
+    \item \textbf{Intuition} The ability to make a calculated guess of the position of off-screen objects.
+    
+\end{itemize}
 \section{Operating Environment}
 
 \section{Design and Implementation Constraints}
-
+\subsection {Design}
+The design of the game is based on 8 and 16 bit characters and sprites that bring back nostalgic feelings to the user. The layout is cheerful and straightforward.
+\subsection{Implementation}
+The game is implemented in Unity. Every thing is made from scratch including sprites,sounds and layout.
 \section{User Documentation}
 
 \section{Assumptions and Dependencies}
@@ -81,8 +101,33 @@ The game must have these features:
 \chapter{System Features}
 \label{System Features}
 
-\section{System Feature 1}
+\section{Jumping}
+\subsection{Description and Priority}
+Being one of the most important game mechanic in any game it allows the player to navigate gaps and dodge enemy attacks.Also it help the player attack enemies that might be jumping as well.
+\subsection{Stimulus}
+\begin{itemize}
+    \item \textbf{Step 1:} The player presses the space button to jump
+    \item \textbf{Step 2:} The character jumps upwards with a constant force.
+\end{itemize}
+\subsection{Functional Requirements:}
+\begin{itemize}
+    \item \textbf{Requirements 1:} Because the player can only jump once before he touches the ground there must be a standardized amount of force the player can jump.
+    \item \textbf{Requirements 2:} There should be different variations to the level to allow the player to jump.
+\end{itemize}
 
+\section{Attacking}
+\subsection{Description and Priority}
+This i fundamental to the game itself as the game requires the player to kill enemies so they can progress to the final boss and ultimately finish the game.
+\subsection{Stimulus}
+\begin{itemize}
+    \item \textbf{Step 1:} The player presses the Z button to fire
+    \item \textbf{Step 2:} The character fires a projectile the deals damage when it hits an enemy and destroys it self afterwards.
+\end{itemize}
+\subsection{Functional Requirements:}
+\begin{itemize}
+    \item \textbf{Requirements 1:} Because the player can only jump once before he touches the ground there must be a standardized amount of force the player can jump.
+    \item \textbf{Requirements 2:} There should be different variations to the level to allow the player to jump.
+\end{itemize}
 
 \chapter{Other Nonfunctional Requirements}
 \label{Other Nonfunctional Requirements}
