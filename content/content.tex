@@ -15,12 +15,6 @@ This document makes use of the following acronyms and it is advised for the read
  \hline
  AVM & Adventures of V man  \\
  \hline
- 1 & 545 \\
- \hline
- 2 & 545  \\
- \hline
- 3 & 88  \\ [1ex] 
- \hline
 \end{tabular}
 \end{center}
 
@@ -74,6 +68,11 @@ What will distinguish players from each other is :
     
 \end{itemize}
 \section{Operating Environment}
+Operating environment for AVM  is as listed below.
+\begin{itemize}
+    \item \textbf{Operating System}: Windows , Linux , Mac-OS
+    \item \textbf{Platform}: Unity 2D
+\end{itemize}
 
 \section{Design and Implementation Constraints}
 \subsection {Design}
@@ -93,10 +92,41 @@ The game is implemented in Unity. Every thing is made from scratch including spr
 \label{External Interface Requirements}
 
 \section{User Interfaces}
-\section{Hardware Interfaces}
-\section{Software Interfaces}
-\section{Communications Interfaces}
 
+\begin{itemize}
+    \item \textbf{Front-End Software:} Unity 2D
+    \item \textbf{Back-End Software:} C \#
+\end{itemize}
+
+\section{Hardware Interfaces}
+\begin{itemize}
+    \item Windows / Linux / Mac Os
+\end{itemize}
+
+\section{Software Interfaces}
+The following is the software used for AVM :
+
+\begin{center}
+
+ \begin{tabular}{ l p {10cm}}
+ 
+ \hline
+ Software used & Description \\ [0.5ex] 
+ \hline\hline
+ Operating System & we have chosen to make the game cross platform to cater to all users but have written the game on windows since unity is not officially supported on Linux \\ 
+ \hline
+ Unity & We have chosen Unity as its a free cross platform framework that works on a plethora of Operating systems  \\
+ \hline
+ 
+\end{tabular}
+
+\end{center}
+
+
+
+
+\section{Communications Interfaces}
+Players of the game wont need to install any additional software packages such as Direct X. Unity relies only on packages which as pre-installed on most operating systems.
 
 \chapter{System Features}
 \label{System Features}
@@ -117,7 +147,7 @@ Being one of the most important game mechanic in any game it allows the player t
 
 \section{Attacking}
 \subsection{Description and Priority}
-This i fundamental to the game itself as the game requires the player to kill enemies so they can progress to the final boss and ultimately finish the game.
+This is fundamental to the game itself as the game requires the player to kill enemies so they can progress to the final boss and ultimately finish the game.
 \subsection{Stimulus}
 \begin{itemize}
     \item \textbf{Step 1:} The player presses the Z button to fire
@@ -125,10 +155,23 @@ This i fundamental to the game itself as the game requires the player to kill en
 \end{itemize}
 \subsection{Functional Requirements:}
 \begin{itemize}
-    \item \textbf{Requirements 1:} Because the player can only jump once before he touches the ground there must be a standardized amount of force the player can jump.
-    \item \textbf{Requirements 2:} There should be different variations to the level to allow the player to jump.
+    \item \textbf{Requirements 1:} The damage the attack deals needs to be constant.
+    \item \textbf{Requirements 2:} Different enemies should have different amounts of health.
 \end{itemize}
 
+\section{Crouching}
+\subsection{Description and Priority}
+This is a mechanic in the game that can be used not only to navigate the map but also dodge incoming attacks. This lowered the height of the player and slows him down.
+\subsection{Stimulus}
+\begin{itemize}
+    \item \textbf{Step 1:} The player presses the Down arrow to crouch.
+    \item \textbf{Step 2:} The character can then move around slower and move under tight spots. 
+\end{itemize}
+\subsection{Functional Requirements:}
+\begin{itemize}
+    \item \textbf{Requirements 1:} The player cant jump while crouching.
+    \item \textbf{Requirements 2:} The player can move backwards while crouching.
+\end{itemize}
 \chapter{Other Nonfunctional Requirements}
 \label{Other Nonfunctional Requirements}
 
